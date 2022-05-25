@@ -10,16 +10,16 @@ body {
 
 .btn-popup {
     position: relative;
-    left: 40vw;
+    left: 45vw;
     top: 50vh;
     background-color: transparent;
     border: 0;
     display: inline-block;
-    font-size: 5em;
+    font-size: 3em;
 }
 .btn-popup:hover {
     cursor: pointer;
-    font-size: 5.5em;
+    font-size: 3.3em;
     font-weight: bold;
 }
 /* .btn-popup:active {
