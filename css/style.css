@@ -110,8 +110,8 @@ body {
 }
 
 .alert {
-    margin-top: 10%;
     background-color: rgb(28, 27, 93);
     color: #FFFFFF;
-    
+    position: relative;
+    top: 8%;
 }
