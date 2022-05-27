@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <button class="btn-popup p1" id="myBtn">Tools</button>
-    <button class="btn-popup p2" id="myBtn">Alert</button>
+    <button class="btn-popup p1" id="myBtn">Uno</button>
+    <button class="btn-popup p2" id="myBtn2">Dos</button>
     <div class="container">
     <div class="popup-container">
         <div class="popup uno" id="myModal">
@@ -18,52 +18,37 @@
             <p>Utilizamos cookies para mejorar la experiencia del usuario, la analítica y el marketing.</p>
             <button class="btn tools">¡Eso está bien!</button>
         </div>
-        <div class="popup dos" id="myModal">
-            <span class="close">&times;</span>
+        <div class="popup dos" id="myModal2">
+            <span class="close2">&times;</span>
             <img src="./img/Frame.png" alt="alert-image">
             <p>¡Se cerrará la sesión inmediatamente!</p>
             <button class="btn alert">Ampliar sesión</button>
         </div>
     </div>
     </div>
-
     <script>
-      // Get the modal
+      // SELECCIONAR MODAL
       var modal = document.getElementById("myModal");
-      
-      // Get the button that opens the modal
+      // SELECCIONAR BOTON MODAL
       var btn = document.getElementById("myBtn");
-      
-      // Get the <span> element that closes the modal
+      // SELECCIONAR BOTON X
       var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
+      // CLICK = ABRIR EL MODAL
       btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
+      modal.style.display = "block";
       } 
-      var modal = document.getElementById("myModal");
-      var btn = document.getElementById("myBtn");
-      var span = document.getElementsByClassName("close")[0];
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
+      // CLICK EN <span> (x), CERRAR EL MODAL
       span.onclick = function() {
-        modal.style.display = "none";
+      modal.style.display = "none";
       }
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
+      var modaltwo = document.getElementById("myModal2");
+      var btntwo = document.getElementById("myBtn2");
+      var spantwo = document.getElementsByClassName("close2")[0];
+      btntwo.onclick = function() {
+        modaltwo.style.display = "block";
+      }
+      spantwo.onclick = function() {
+        modaltwo.style.display = "none";
       }
       </script>
 
